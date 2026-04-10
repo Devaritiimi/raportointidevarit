@@ -28,3 +28,15 @@ Käyttäjä kirjoittaa hakukenttään esimerkiksi kaupungin nimen tai kohteen ni
 - kategoriasuodatus
 - hinnan mukaan suodatus
 - lajittelu uusimman tai suosituimman mukaan
+_____________________________________________________________________________________________________________________________________________________________________________
+NEW UPDATES
+_____________________________________________________________________________________________________________________________________________________________________________
+
+# Hakutoiminnon tarkennus
+
+Tämä päivitys liittyy listauksien hakutoiminnon suunnitteluun.
+
+## Lisähuomiot
+- hakua voidaan tehdä nimen perusteella
+- hakua voidaan tehdä sijainnin perusteella
+- jos tuloksia ei löydy, käyttäjälle näytetään selkeä ilmoitus
