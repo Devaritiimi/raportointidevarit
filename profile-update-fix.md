@@ -28,3 +28,16 @@ Varmistaa, että käyttäjän päivittämät tiedot tallentuvat oikein ja näkyv
 3. Tallenna muutokset
 4. Päivitä sivu
 5. Tarkista, että uudet tiedot näkyvät oikein
+
+
+_____________________________________________________________________________________________________________________________________________________________________
+NEW UPDATES
+_____________________________________________________________________________________________________________________________________________________________________
+# Profiilin tallennuksen tarkennus
+
+Tämä päivitys liittyy profiilin tietojen tallennuksen parantamiseen.
+
+## Lisähuomiot
+- käyttäjälle tulee näyttää onnistumisviesti tallennuksen jälkeen
+- virhetilanteessa käyttäjälle tulee näyttää selkeä virheilmoitus
+- tallennuksen tulee säilyä myös sivun päivityksen jälkeen
