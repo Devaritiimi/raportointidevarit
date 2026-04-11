@@ -19,3 +19,7 @@ Hakea laitteen koordinaatit (leveys- ja pituusaste) automaattisesti taustalla he
 - [ ] **Aikaleima:** Sijaintitiedon mukana tallentuu hetki, jolloin koordinaatit on haettu (timestamp).
 - [ ] **Virhekäsittely:** Jos GPS-signaalia ei löydy tai käyttäjä kieltää sijainnin, sovellus antaa selkeän ilmoituksen (esim. "Sijaintia ei voitu hakea").
 - [ ] **Tallennus raporttiin:** Koordinaatit linkittyvät automaattisesti lähetettävään raporttiin ja ne tallentuvat tietokantaan raportin mukana.
+
+
+## Muutoksia
+- Tarkkuusvaatimus, esimerkiksi sijaintia ei tallenneta jos tarkkuus on huonompi kuin 50 metriä.
