@@ -4,138 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raportointijärjestelmä | Kirjaudu sisään</title>
-    <style>
-        :root {
-            --primary-color: #2563eb;
-            --primary-hover: #1d4ed8;
-            --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-            --text-main: #1e293b;
-            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-        }
+    <link rel="stylesheet" href="styles.css">
+  
 
-        body {
-            font-family: 'Inter', -apple-system, sans-serif;
-            background: var(--bg-gradient);
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            color: var(--text-main);
-        }
-
-        .login-card {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 1rem;
-            box-shadow: var(--shadow);
-            width: 100%;
-            max-width: 400px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .header h1 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-        }
-
-        .form-group {
-            margin-bottom: 1.25rem;
-        }
-
-        label {
-            display: block;
-            font-size: 0.875rem;
-            font-weight: 500;
-            margin-bottom: 0.5rem;
-        }
-
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #cbd5e1;
-            border-radius: 0.5rem;
-            box-sizing: border-box;
-            transition: border-color 0.2s;
-        }
-
-        input:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-        }
-
-        .options {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.875rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .remember-me {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .forgot-password {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .forgot-password:hover {
-            text-decoration: underline;
-        }
-
-        .btn-login {
-            width: 100%;
-            padding: 0.75rem;
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-
-        .btn-login:hover {
-            background: var(--primary-hover);
-        }
-
-        .footer {
-            margin-top: 1.5rem;
-            text-align: center;
-            font-size: 0.75rem;
-            color: #64748b;
-        }
-    </style>
 </head>
 <body>
 
-<div class="login-card">
-    <div class="header">
-        <h1>Raportointijärjestelmä Pro</h1>
-        <p>Kirjaudu sisään jatkaaksesi</p>
-    </div>
+<!-- login.html -->
+<div class="login-container">
+  <form class="login-form" method="POST" action="/login">
+    <h2>Kirjaudu sisään</h2>
 
-    <form action="/api/login" method="POST">
-        <div class="form-group">
-            <label for="username">Käyttäjätunnus</label>
-            <input type="text" id="username" name="username" required autofocus placeholder="tunnus@yritys.fi">
-        </div>
+    <label for="username">Käyttäjätunnus</label>
+    <input type="text" id="username" name="username" required />
 
-        <div class="form-group">
-            <label for="password">Salasana</label>
-            <input type="password" id="password" name="password" required placeholder="••••••••">
-        </div>
+    <label for="password">Salasana</label>
+    <input type="password" id="password" name="password" required />
+
+    <button type="submit">Kirjaudu</button>
+
 
         <div class="options">
             <label class="remember-me">
@@ -146,10 +33,6 @@
 
         <button type="submit" class="btn-login">Kirjaudu sisään</button>
     </form>
-
-    <div class="footer">
-        &copy; 2026 Yritys Oy – Sisäinen raportointijärjestelmä
-    </div>
 </div>
 
 </body>
