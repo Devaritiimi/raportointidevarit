@@ -12,3 +12,6 @@ Lisätä sovellukseen painike, joka avaa puhelimen kameran ja tallentaa kuvan os
 - [ ] Käyttäjä voi klikata "Ota kuva" -painiketta.
 - [ ] Sovellus pyytää kameran käyttöoikeutta.
 - [ ] Otettu kuva näkyy esikatseluna ennen raportin lähettämistä.
+
+## Muutoksia
+- Kuvien laatu ja täten koko täytyy ottaa huomioon, esimerkiksi pakkaus alle 2MB kokoiseksi.
