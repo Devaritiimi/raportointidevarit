@@ -28,3 +28,6 @@ Luoda järjestelmään kaksi selkeää käyttäjäroolia: **Kuljettaja** ja **Es
 - [ ] Järjestelmä erottaa kirjautuneen käyttäjän roolin.
 - [ ] "Admin-paneeli" näkyy vain Esimies-roolilla.
 - [ ] Kuljettaja saa virheilmoituksen (403 Forbidden), jos hän yrittää hakea muiden raportteja URL-osoitteen kautta.
+
+## Muutoksia
+- Istunnon kesto: Kuinka kauan käyttäjä saa pysyä kirjautuneena, turvallisuussyistä admin-sessio voisi vanheta 30 minuutissa.
