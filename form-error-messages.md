@@ -33,3 +33,18 @@ Parantaa käytettävyyttä näyttämällä selkeät ja ymmärrettävät virheilm
 2. Syötä virheellinen sähköpostiosoite
 3. Lähetä lomake
 4. Tarkista, että oikea virheilmoitus näkyy oikeassa kohdassa
+
+
+____________________________________________________________________________________________________________________________________________________________________________
+NEW UPDATES
+____________________________________________________________________________________________________________________________________________________________________________
+
+
+# Validointiviestien tarkennus
+
+Tämä päivitys liittyy lomakkeiden validointiviestien parantamiseen.
+
+## Lisähuomiot
+- virheellinen kenttä tulee korostaa selkeästi
+- virheilmoituksen tulee näkyä oikean kentän yhteydessä
+- onnistuneesta toiminnosta tulee näyttää vahvistusviesti
