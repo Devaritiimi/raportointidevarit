@@ -7,6 +7,13 @@ trigger:
 - main
 - feature/*
 
+- task: PublishPipelineArtifact@1
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/head/main'))
+
+pr:
+- main
+- feature/*
+
 pool:
   vmImage: ubuntu-latest
 
