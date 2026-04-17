@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <title>Login</title>
@@ -10,5 +10,45 @@
     <input type="password" name="password" placeholder="Password" required /><br><br>
     <button type="submit">Login</button>
   </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raportointijärjestelmä | Kirjaudu sisään</title>
+    <link rel="stylesheet" href="styles.css">
+  
+
+</head>
+<body>
+
+<!-- login.html -->
+<div class="login-container">
+  <form class="login-form" method="POST" action="/login">
+    <h2>Kirjaudu sisään.</h2>
+
+    <label for="username">Käyttäjätunnus</label>
+    <input type="text" id="username" name="username" required />
+
+    <label for="password">Salasana</label>
+    <input type="password" id="password" name="password" required />
+
+    <button type="submit">Kirjaudu</button>
+
+
+        <div class="options">
+            <label class="remember-me">
+                <input type="checkbox" name="remember"> Muista minut
+            </label>
+            <a href="/password-reset" class="forgot-password">Unohditko salasanan?</a>
+        </div>
+
+        <button type="submit" class="btn-login">Kirjaudu sisään</button>
+    </form>
+</div>
+
 </body>
 </html>
