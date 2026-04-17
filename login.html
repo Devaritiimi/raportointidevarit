@@ -1,39 +1,21 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>Login</title>
-</head>
-<body>
-  <h2>Login</h2>
-  <form method="POST" action="/login">
-    <input type="text" name="username" placeholder="Username" required /><br><br>
-    <input type="password" name="password" placeholder="Password" required /><br><br>
-    <button type="submit">Login</button>
-  </form>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raportointijärjestelmä | Kirjaudu sisään</title>
-    <link rel="stylesheet" href="styles.css">
- 
-</head>
-<body>
- <styles>
-    :root {
+
+    <style>
+        :root {
             --primary-color: #2563eb;
             --primary-hover: #1d4ed8;
             --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
             --text-main: #1e293b;
-            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
         }
 
         body {
-            font-family: 'Inter', -apple-system, sans-serif;
+            font-family: Arial, sans-serif;
             background: var(--bg-gradient);
             height: 100vh;
             display: flex;
@@ -45,152 +27,74 @@
 
         .login-card {
             background: white;
-            padding: 2.5rem;
-            border-radius: 1rem;
+            padding: 2rem;
+            border-radius: 10px;
             box-shadow: var(--shadow);
             width: 100%;
-            max-width: 400px;
+            max-width: 350px;
         }
 
-        .header {
+        h2 {
             text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .header h1 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-        }
-
-        .form-group {
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.5rem;
         }
 
         label {
-            display: block;
-            font-size: 0.875rem;
-            font-weight: 500;
-            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
         }
 
-        input[type="text"],
-        input[type="password"] {
+        input {
             width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #cbd5e1;
-            border-radius: 0.5rem;
-            box-sizing: border-box;
-            transition: border-color 0.2s;
-        }
-
-        input:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+            padding: 0.6rem;
+            margin-top: 0.3rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
         .options {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            font-size: 0.875rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .remember-me {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .forgot-password {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .forgot-password:hover {
-            text-decoration: underline;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
         }
 
         .btn-login {
             width: 100%;
-            padding: 0.75rem;
+            padding: 0.7rem;
             background: var(--primary-color);
             color: white;
             border: none;
-            border-radius: 0.5rem;
-            font-weight: 600;
+            border-radius: 5px;
             cursor: pointer;
-            transition: background 0.2s;
         }
 
         .btn-login:hover {
             background: var(--primary-hover);
         }
+    </style>
+</head>
 
-        .footer {
-            margin-top: 1.5rem;
-            text-align: center;
-            font-size: 0.75rem;
-            color: #64748b;
-        }
+<body>
 
-/* styles.css */
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #f4f6f8;
-}
+<div class="login-card">
+    <form method="POST" action="/login">
+        <h2>Kirjaudu sisään</h2>
 
-.login-form {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+        <label for="username">Käyttäjätunnus</label>
+        <input type="text" id="username" name="username" required>
 
-.login-form input {
-  padding: 8px;
-  border: 1px solid #ccc;
-}
-
-.login-form button {
-  background: #0078d4;
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
-  </styles>
-
-<!-- login.html -->
-<div class="login-container">
-  <form class="login-form" method="POST" action="/login">
-    <h2>Kirjaudu sisään.</h2>
-
-    <label for="username">Käyttäjätunnus</label>
-    <input type="text" id="username" name="username" required />
-
-    <label for="password">Salasana</label>
-    <input type="password" id="password" name="password" required />
-
-    <button type="submit">Kirjaudu</button>
-
+        <label for="password">Salasana</label>
+        <input type="password" id="password" name="password" required>
 
         <div class="options">
-            <label class="remember-me">
+            <label>
                 <input type="checkbox" name="remember"> Muista minut
             </label>
-            <a href="/password-reset" class="forgot-password">Unohditko salasanan?</a>
+            <a href="#">Unohditko?</a>
         </div>
 
-        <button type="submit" class="btn-login">Kirjaudu sisään</button>
+        <button type="submit" class="btn-login">Kirjaudu</button>
     </form>
 </div>
 
